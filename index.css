@@ -1,0 +1,103 @@
+/* index.css */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2d1663; /* Purple background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+main {
+  max-width: 500px;
+  width: 100%;
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+.budget-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Expense Category Box */
+.expense-category {
+  background-color: #4a4a4a; 
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.income {
+  background-color: #0c802c; 
+}
+
+.housing {
+  background-color: #4a4a4a; 
+}
+
+.add-expense-category {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Inputs */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.description-input,
+#new-category-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 18px;
+  width: 30rem;
+  height: 3rem;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: #000000ad; 
+  
+}
+
+.expense-amount-input{
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 18px;
+  width: 30rem;
+  height: 3rem;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: #000000ad; 
+}
+
+/* Button */
+.addInputBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addInputBtn:hover {
+  background-color: #444;
+}
+

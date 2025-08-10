@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <header>
+      <section id = expense-header>
+
+         <h2 class = "budget-text">Income:</h2>
+          <h2 class = "budget-text">Planned Expenses:</h2>
+          <h2 class = "budget-text">Left to Budget:</h2>
+      </section>    
+      
+
+    </header>
+         
+    <main>
+      <section>
+        
+        
+        
+      </section>
+        
+        
+        <section class = "expense-section">
+          
+          <!--Income Category-->
+          <div class = "income expense-category">
+            <h4>Income:</h4>
+            
+            <div class = "input-container">
+              <input class = "description-input" placeholder="Description" name = "description" type="text">
+              <input class = "expense-amount-input" placeholder="Amount" name = "expense-amount" type="number">
+            </div>
+
+            <button class="addInputBtn">Add Expense</button>
+          </div>
+
+        <!--Housing Category-->
+        <div class = "housing expense-category">
+          <h4>Housing:</h4>
+          
+          <div class = "input-container">
+            <input class = "description-input"  placeholder="Description"name = "description" type="text">
+            <input class = "expense-amount-input" placeholder="Amount" name="expense-amount" type="number">
+
+          </div>
+
+        <button class="addInputBtn">Add Expense</button>
+        </div>
+
+        <div class = "add-expense-category">
+          <input id = "new-category-input" placeholder="Add Category" type = "text" name="category-name">
+        </div>
+      </section>
+
+      
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

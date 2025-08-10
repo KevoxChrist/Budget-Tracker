@@ -1,0 +1,145 @@
+// Variables
+$purple-bg: #2d1663;
+$primary-color: #007bff8a;
+$gray-bg: #4a4a4a;
+$green-bg: #0c802c;
+$dark-bg: #333;
+$input-bg: #000000ad;
+$text-color: aliceblue;
+
+
+@mixin gradient($color1, $color2) {
+  background: $color1; 
+  background: linear-gradient(to top, $color1, $color2);
+}
+
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 15rem;
+  margin: 0 auto; 
+}
+
+#expense-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  height: 10rem;
+  border-radius: 20px;
+  background: $primary-color;
+}
+
+// Base
+body {
+  font-family: Arial, sans-serif;
+  @include gradient(#003dc0, #0e4927);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+section {
+  margin-bottom: 20px;
+  text-align: center;
+
+  .budget-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+}
+
+// Expense Category Boxes
+.expense-category {
+  background-color: $gray-bg;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%; 
+  
+
+  &.income {
+    background-color: $green-bg;
+  }
+
+  &.housing {
+    background-color: $gray-bg;
+  }
+
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+
+    .description-input,
+    .expense-amount-input {
+      padding: 8px;
+      border: none;
+      border-radius: 18px;
+      width: 15rem;
+      height: 3rem;
+      font-size: 20px;
+      color: $text-color;
+      background-color: $input-bg;
+    }
+  }
+}
+
+// Add Expense Category
+.add-expense-category {
+  background-color: $dark-bg;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+
+  #new-category-input {
+    padding: 8px;
+    border: none;
+    border-radius: 18px;
+    width: 35rem;
+    height: 3rem;
+    font-size: 20px;
+    color: $text-color;
+    background-color: $input-bg;
+  }
+}
+
+// Buttons
+.addInputBtn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #444;
+  }
+}
+
+@media screen {
+    
+}
